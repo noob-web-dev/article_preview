@@ -11,7 +11,7 @@
     />
     <title>Frontend Mentor | Article preview component</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/script.js"></script>
+    <script defer src="./js/script.js"></script>
     <style>
       .attribution {
         font-size: 11px;
@@ -45,8 +45,8 @@
               help you make any room feel complete.
             </p>
           </div>
-          <div class="article__linksContainer">
-            <address class="article__authorProfile">
+          <div class="article__linksContainer" id="linksContainer">
+            <address class="article__authorProfile" id="authorProfile">
               <a href="#" class="authorProfile__link">
                 <img
                   class="author__image"
@@ -57,7 +57,7 @@
                 <time class="publish-date"> 28 Jun 2020 </time>
               </a>
             </address>
-            <div class="popup__menu">
+            <div class="popup__menu popup__menu--hide" id="popupMenu">
               <a href="#" class="popup__item">Share</a>
               <div>
                 <a href="#" class="popup__item">
@@ -71,7 +71,7 @@
                 </a>
               </div>
             </div>
-            <button class="btn btn__popup"></button>
+            <button class="btn btn__popup" id="popupButton"></button>
           </div>
         </div>
       </article>
